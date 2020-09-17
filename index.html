@@ -4,10 +4,43 @@
 <head>
     <meta charset='UTF-8'>
     <title>Library</title>
-    <link ref="stylesheet" href="practice_book.css">
+    <link rel="stylesheet" href="practice_book.css">
 </head>
 
 <body>
+    <div id="openFormDiv">
+    <input id="openForm" type="button" value="Add New Book">
+    </div>
+    <div id="formDiv">
+        <form name="addBookForm">
+            <label for="bookTitle">Book Title:</label>
+            <input type="text" id="bookTitle" name="bookTitle" value="" required><br>
+
+            <label for="bookAuthor">Book Author:</label>
+            <input type="text" id="bookAuthor" name="bookAuthor" required><br>
+
+            <label for="bookPages">Number of Pages:</label>
+            <input type="intiger" id="bookPages" name="bookPages" required><br>
+
+            <label>Have you read it?</label><br>
+            <input type="radio" id="bookReadYes" name="bookRead" value="yes">
+            <label for="bookReadYes">Yes</label><br>
+            <input type="radio" id="bookReadNo" name="bookRead" value="no">
+            <label for="bookReadNo">No</label><br>
+
+            <input id="addBook" type="button" value="Submit"><br>
+        </form>
+    </div>
+    <div id="tableDiv">
+        <table id="bookList">
+            <tr>
+                <th>Book Title</th>
+                <th>Book Author</th>
+                <th># of Pages</th>
+                <th>Have Read?</th>
+            </tr>
+        </table>
+    </div>
 
     <script src="practice_book.js"></script>
 </body>
